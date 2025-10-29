@@ -8,48 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light mode - Clean professional theme */
-    --background: 210 40% 98%;
-    --foreground: 210 60% 12%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 210 60% 12%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 60% 12%;
-
-    --primary: 210 100% 12%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 210 100% 25%;
-
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 210 60% 12%;
-
-    --muted: 210 40% 95%;
-    --muted-foreground: 210 20% 45%;
-
-    --accent: 195 100% 50%;
-    --accent-foreground: 210 60% 12%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 210 30% 88%;
-    --input: 210 30% 88%;
-    --ring: 210 100% 12%;
-
-    --radius: 0.75rem;
-
-    /* Custom portfolio tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(210, 100%, 12%), hsl(210, 100%, 20%));
-    --gradient-accent: linear-gradient(135deg, hsl(195, 100%, 50%), hsl(210, 100%, 55%));
-    --shadow-elegant: 0 10px 40px -10px hsl(210 100% 12% / 0.2);
-    --shadow-glow: 0 0 40px hsl(195 100% 50% / 0.3);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .dark {
-    /* Dark mode - Navy blue gradient theme */
+    /* Dark mode only - Navy blue gradient theme */
     --background: 210 100% 8%;
     --foreground: 210 40% 98%;
 
@@ -79,11 +38,14 @@ All colors MUST be HSL.
     --input: 210 60% 15%;
     --ring: 195 100% 50%;
 
-    /* Dark mode custom tokens */
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
     --gradient-primary: linear-gradient(135deg, hsl(210, 100%, 8%), hsl(210, 100%, 15%));
     --gradient-accent: linear-gradient(135deg, hsl(195, 100%, 45%), hsl(210, 100%, 50%));
     --shadow-elegant: 0 10px 40px -10px hsl(195 100% 50% / 0.3);
     --shadow-glow: 0 0 50px hsl(195 100% 50% / 0.4);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

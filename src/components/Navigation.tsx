@@ -1,6 +1,5 @@
-import { Moon, Sun, Globe } from 'lucide-react';
+import { Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useTheme } from '@/contexts/ThemeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import {
   DropdownMenu,
@@ -10,7 +9,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 export const Navigation = () => {
-  const { theme, toggleTheme } = useTheme();
   const { language, setLanguage, t } = useLanguage();
 
   const scrollToSection = (id: string) => {
@@ -55,34 +53,24 @@ export const Navigation = () => {
             </button>
           </div>
 
-          <div className="flex items-center gap-2">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Globe className="h-5 w-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setLanguage('en')}>
-                  English {language === 'en' && '✓'}
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('ru')}>
-                  Русский {language === 'ru' && '✓'}
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('uz')}>
-                  O'zbek {language === 'uz' && '✓'}
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <Button variant="ghost" size="icon" onClick={toggleTheme}>
-              {theme === 'light' ? (
-                <Moon className="h-5 w-5" />
-              ) : (
-                <Sun className="h-5 w-5" />
-              )}
-            </Button>
-          </div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Globe className="h-5 w-5" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem onClick={() => setLanguage('en')}>
+                English {language === 'en' && '✓'}
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setLanguage('ru')}>
+                Русский {language === 'ru' && '✓'}
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setLanguage('uz')}>
+                O'zbek {language === 'uz' && '✓'}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </nav>

@@ -56,7 +56,7 @@ export const Hero = () => {
 
           <div className="flex gap-4 justify-center pt-8">
             <a
-              href="https://github.com"
+              href="https://github.com/yuldashov69"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-accent hover:text-background transition-all duration-300 hover:scale-110"

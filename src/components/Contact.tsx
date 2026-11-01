@@ -65,12 +65,12 @@ export const Contact = () => {
                   Telegram
                 </h3>
                 <a
-                  href="https://t.me/Yuldwv"
+                  href="https://t.me/Amrxonnn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent transition-colors"
                 >
-                  @Yuldwv
+                  @Amrxonnn
                 </a>
               </div>
             </div>

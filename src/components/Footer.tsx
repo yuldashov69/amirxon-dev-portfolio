@@ -64,9 +64,7 @@ export const Footer = () => {
             <p className="flex items-center justify-center gap-2 flex-wrap">
               © {currentYear} Yuldashov Amirxon. {t('footer_rights')}.
             </p>
-            <p className="flex items-center justify-center gap-2 mt-2">
-              {t('footer_built')} <Heart className="w-4 h-4 text-accent fill-accent" />
-            </p>
+          
           </div>
         </div>
       </div>

@@ -30,13 +30,13 @@ export const Footer = () => {
                   amirxonyuldashov611@gmail.com
                 </a>
                 <a
-                  href="https://t.me/Yuldwv"
+                  href="https://t.me/Amrxonnn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-accent transition-colors"
                 >
                   <Send className="w-4 h-4" />
-                  @Yuldwv
+                  @Amrxonnn
                 </a>
               </div>
             </div>
